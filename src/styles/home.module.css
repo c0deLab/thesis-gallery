@@ -1,0 +1,166 @@
+.thesisHomeContainer {
+    width: 50vw;
+    position: absolute;
+    bottom: 10vh;
+    right: 25vw;
+    transform: rotatez(-90deg);
+    -webkit-transform: rotatez(-90deg);
+    //top: 20vh;
+    //left: 10vw;
+
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+}
+
+.soaLogo {
+    display: inline-block;
+    width: 75px;
+    position: fixed;
+    top: 75px;
+    right: 50px;
+}
+
+.soaLogo :global {
+    animation: logoEntrance 0.75s ease-in-out;
+    -webkit-animation: logoEntrance 0.75s ease-in-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.thesisSection {
+    display: block;
+    border: none;
+    margin: 70px 0px;
+
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+}
+
+.thesisSection :global {
+    animation: entrance 0.75s ease-in-out;
+    -webkit-animation: entrance 0.75s ease-in-out;
+    transform: translate3d(-800px, 0px, 0px);
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.thesisBannerContainer {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 5vw;
+    width: 40vw;
+}
+
+.thesisBannerContainer :global {
+    animation: entrance 1.0s ease-in-out;
+    -webkit-animation: entrance 1.0s ease-in-out;
+}
+
+.thesisBanner {
+    padding: 5px;
+    //border: 1px solid black;
+    background: white;
+    font-family: sans-serif; 
+    font-size: 4em;
+}
+
+
+.thesisSectionTitle {
+    display: inline-block;
+    font-size: 3.25em;
+    font-family: sans-serif;
+    background: white;
+    text-align: left;
+    padding: 5px;
+    margin: 0px 0px;
+    -transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+}
+
+.thesisSectionTitle:hover {
+    color: #de4a4a;
+}
+
+.thumbnailContainer {
+    width: 500px;
+    line-height: 1.5;
+}
+
+
+.thumbnail:first-child {
+    border: 1px solid black;
+}
+
+.thumbnail {
+    /*height: 100px;*/
+    display: inline;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-left: none;
+
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+}
+
+.thumbnail:hover {
+    cursor: pointer;
+    transform: translate3d(0px, 80px, 0px);
+    -webkit-transform: translate3d(0px, 80px, 0px);
+}
+
+// MEDIA QUERIES
+
+
+
+@media only screen  and (max-width: 1200px) {
+    .thesisHomeContainer {
+	position: absolute;
+	bottom: 0vh;
+    }
+}
+
+@media only screen  and (max-width: 1000px) {
+    .thesisHomeContainer {
+	position: absolute;
+	bottom: -10vh;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .thesisHomeContainer {
+	margin: 20px 0px 0px 0px;
+	position: relative;
+	left: atuo;
+	bottom: auto;
+	width: 100%;
+	margin: 10px auto;
+	transform: rotatez(0deg);
+	-webkit-transform: rotatez(0deg);
+    }
+
+    .thesisSection {
+	margin-left: 80px;
+    }
+
+    .thesisSectionTitle {
+	font-size: 2.5em;
+    }
+
+    .thesisBannerContainer {
+	display: block;
+	position: relative;
+	width: 100%;
+    }
+
+    .thesisBanner {
+	font-size: 3em;
+    }
+
+    .soaLogo {
+	position: relative;
+	display: block;
+	margin: 0px auto;
+    }
+}

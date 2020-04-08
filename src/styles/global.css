@@ -1,0 +1,80 @@
+html {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #fdf6ec;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    color: #555555;
+}
+
+img {
+    width: 100%;
+    margin: 10px 0px;
+    transition: all 1s;
+}
+
+.thumbnail {
+    transform: scale(0.4);
+    transition: all 0.5s;
+    animation: growth 1s ease-in-out;
+    -webkit-animation: growth 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+/* Keyframes */
+
+@keyframes entrance {
+    0% {
+	opacity: 0;
+	transform: translate3d(-800px, 0px, 0px);
+	-webkit-transform: translate3d(-800px, 0px, 0px);
+    }
+
+    100% {
+	opacity: 1;
+	transform: translate3d(0px, 0px, 0px);
+	-webkit-transform: translate3d(0px, 0px, 0px);
+    }
+}
+
+
+@keyframes logoEntrance {
+    0% {
+	opacity: 0;
+
+	-webkit-transform: rotate3D(10deg, 90deg, 10deg);
+
+	transform: scale3d(0, 0, 0);
+	-webkit-transform: scale3d(0, 0, 0);
+    }
+
+    100% {
+	opacity: 1;
+
+	-webkit-transform: rotate3D(0deg, 0deg, 0deg);
+
+	transform: scale3d(1, 1, 1);
+	-webkit-transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

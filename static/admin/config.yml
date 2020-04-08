@@ -1,0 +1,17 @@
+backend:
+  name: 'test-repo'
+  repo: 'test-repo'
+
+media_folder: 'static/assets'
+public_folder: '/assets'
+
+collections:
+  - name: 'gallery'
+    label: 'Gallery'
+    folder: 'gallery'
+    create: true
+    fields:
+      -  { name: 'url', label: 'URL' }
+      -  { name: 'name', label: 'Title' }
+      -  { name: 'tags', label: 'Tags', widget: 'list' }
+      -  { name: 'text', label: 'Body', widget: 'markdown' }
